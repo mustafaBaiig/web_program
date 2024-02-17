@@ -11,16 +11,30 @@
 <h1>Buttons</h1>
 
 <body>
-<button type="button" class="btn btn-light">Basic</button>
-<button  type="button" class="btn btn-light"style="border:1px solid #000">Default</button>
-<button type="button" class="btn btn-primary">Primary</button>
-<button type="button" class="btn btn-secondary">Secondary</button>
-<button type="button" class="btn btn-success">Success</button>
-<button type="button" class="btn btn-info">Info</button>
-<button type="button" class="btn btn-danger">Danger</button>
-<button type="button" class="btn btn-warning">Warning</button>
+<button  type="button" class="btn btn-light buttons">Basic</button>
+<button  type="button" class="btn btn-light  buttons"style="border:1px solid #000">Default</button>
+<button type="button" class="btn btn-primary  buttons">Primary</button>
+<button type="button" class="btn btn-secondary  buttons">Secondary</button>
+<button type="button" class="btn btn-success  buttons">Success</button>
+<button type="button" class="btn btn-info  buttons">Info</button>
+<button type="button" class="btn btn-danger  buttons">Danger</button>
+<button type="button" class="btn btn-warning  buttons">Warning</button>
 
 
 <button type="button" class="btn btn-link">Link</button>
+
+
+
+<script>
+
+    document.querySelectorAll('.buttons').forEach(btn => {
+        btn.addEventListener('click', ()=>{
+        alert('Button has been clicked')
+    });
+    })
+    
+</script>
+
+
 </body>
 </html>
