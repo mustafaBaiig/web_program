@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        #container {
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        
+        input[type="number"] {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 8px 15px;
+            background-color: rgb(191, 191, 249);
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: rgb(210, 210, 250);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #050505;
+            text-align: center;
+            padding: 8px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <label for="numberInput">Enter a number:</label>
+        <input type="number" id="numberInput" required>
+        <button onclick="generateTable()">Calculate</button>
+        <div id="tableContainer"></div>
+    </div>
+
+    <script>
+        function generateTable() {
+            var number = parseInt(document.getElementById('numberInput').value);
+
+            if ((number)) {
+                var tableHtml = "<h2>Multiplication Table for " + number + "</h2>";
+                tableHtml += "<table>";
+                tableHtml += "<tr><th>Multiplier</th><th>Result</th></tr>";
+
+                for (var i = 1; i <= 10; i++) {
+                    var result = number * i;
+                    tableHtml += "<tr><td>" + number + " x " + i + "</td><td>" + result + "</td></tr>";
+                }
+
+                tableHtml += "</table>";
+                document.getElementById('tableContainer').innerHTML = tableHtml;
+            } else {
+                alert("Invalid input! Please enter a valid number.");
+            }
+        }
+    </script>
+</body>
+</html>
