@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <h1>Result = <span id="res">0</span></h1>
+    <label for="valueInput"><span id="req">*</span>Number 1:</label>  
+    <input style="margin-left: 4%;" type="number" id="valueInput1" name="valueInput" required>
+    <br><br>
+    <label for="valueInput"><span class="req">*</span>Number 2:</label>  
+    <input style="margin-left: 4%;" type="number" id="valueInput2" name="valueInput" required>
+    <br><br>
+    <button id="add">Addition</button>
+    <button id="sub">Subtraction</button>
+    <button id="mul">Multiplication</button>
+    <button id="div">divide</button>
+
+    <script>
+
+document.getElementById('add').addEventListener('click' , ()=>{
+    
+let num1 = Number(document.getElementById('valueInput1').value);
+let num2 = Number(document.getElementById('valueInput2').value);
+    document.getElementById('res').innerHTML =  num1 + num2;
+})
+
+document.getElementById('sub').addEventListener('click' , ()=>{
+    
+let num1 = Number(document.getElementById('valueInput1').value);
+let num2 = Number(document.getElementById('valueInput2').value);
+    document.getElementById('res').innerHTML =  num1 - num2;
+})
+
+document.getElementById('mul').addEventListener('click' , ()=>{
+    
+let num1 = Number(document.getElementById('valueInput1').value);
+let num2 = Number(document.getElementById('valueInput2').value);
+    document.getElementById('res').innerHTML =  num1 * num2;
+})
+
+
+document.getElementById('div').addEventListener('click' , ()=>{
+    
+let num1 = Number(document.getElementById('valueInput1').value);
+let num2 = Number(document.getElementById('valueInput2').value);
+    document.getElementById('res').innerHTML =  num1 / num2;
+})
+    </script>
+
+ </body>
+</html>
