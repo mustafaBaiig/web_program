@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Month</title>
+</head>
+<body>
+    <h1>Month days</h1>
+    <p>First Alphabet should be Capital</p>
+    <div id="result"></div>
+    <br><br>
+    <Label for="valueInput1">Enter Month Name:</Label>
+    <input type="text" id="monthInput" required>
+    <button onclick="checkMonth()">Check</button>
+  
+
+    <script>
+        
+        const months = {
+            "Jan": 31,
+            "Feb": 28, 
+            "Mar": 31,
+            "Apr": 30,
+            "May": 31,
+            "Jun": 30,
+            "Jul": 31,
+            "Aug": 31,
+            "Sep": 30,
+            "Oct": 31,
+            "Nov": 30,
+            "Dec": 31
+        };
+
+        function checkMonth() {
+            const monthName = document.getElementById('monthInput').value.trim();
+            const daysInMonth = months[monthName];
+            if (daysInMonth) {
+                document.getElementById('result').innerHTML = `<span style = "color: red;">${monthName} </span> has  ${daysInMonth} days in month`;
+            } else {
+                document.getElementById('result').innerHTML = "Invalid month!";
+            }
+        }
+    </script>
+</body>
+</html>
