@@ -1,0 +1,49 @@
+<style>
+.body{
+    background-color: rgb(44, 41, 41);
+}
+
+.form{
+    background-color: darkslategray;
+    justify-content: center;
+   display: flex;
+    width: 20%;
+    margin-left: 40%;
+}
+.form:hover{
+    
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.20) ;
+   
+}
+.submit{
+    
+    padding-left: 100px;
+    padding-right: 100px;
+}
+</style>
+
+<h1 style="text-align: center; color: white;">Google Form</h1>
+<body class="body">
+ 
+    <div class="form">
+        <form>
+            <label for="valueInput"><span class="req">*</span>Name:</label>
+            <input style="margin-left: 10%; margin-top: 1%;"  type="text" id="valueInput" name="valueInput" required> 
+            <br><br>
+            <label for="valueInput"><span class="req">*</span>Username:</label>
+            <input  type="text" id="valueInput" name="valueInput" required> 
+            <br><br>
+            <label for="valueInput"><span class="req">*</span>Password:</label>
+            <input style="margin-left: 1%;" type="password" id="valueInput" name="valueInput" required>
+            <br><br>
+            <label for="valueInput"><span class="req">*</span>Number:</label>  
+            <input style="margin-left: 5%;" type="number" id="valueInput" name="valueInput" required>
+            <br><br>
+            <label for="valueInput"><span>*</span>Email:</label>
+            <input style="margin-left: 11%;" type="email" required>
+            <br><br>
+            <input style="background-color: rgb(6, 74, 6);font-weight: bolder;" class="submit" type="submit" required>
+        </form>
+    </div>
+    
+</body>
