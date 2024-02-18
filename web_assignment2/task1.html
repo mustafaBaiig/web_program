@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+    <style>
+        .body {
+            background-color: rgb(44, 41, 41);
+        }
+
+        .form {
+            background-color: darkslategray;
+            justify-content: center;
+            display: flex;
+            width: 20%;
+            margin-left: 40%;
+        }
+
+        .form:hover {
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.20);
+        }
+
+        .submit {
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+        }
+
+        label {
+            color: white;
+        }
+
+      
+
+        input[type="radio"] {
+            margin-left: 15px;
+        }
+
+        .req {
+            color: red;
+        }
+    </style>
+</head>
+<body class="body">
+
+<h1>Google Form</h1>
+
+<div class="form">
+    <form onsubmit="return validateForm()">
+        <label for="name"><span class="req">*</span>Name:</label>
+        <input style="margin-left: 24px;" type="text" id="name" name="name" required><br><br>
+
+        <label for="username"><span class="req">*</span>Username:</label>
+        <input  type="text" id="username" name="username" required><br><br>
+
+        <label for="password"><span class="req">*</span>Password:</label>
+        <input style="margin-left: 4px;" type="password" id="password" name="password" required><br><br>
+
+        <label for="number"><span class="req">*</span>Number:</label>
+        <input style="margin-left: 13px;" type="text" id="number" name="number" required><br><br>
+
+        <label for="email"><span class="req">*</span>Email:</label>
+        <input style="margin-left: 28px;" type="email" id="email" name="email" required><br><br>
+
+        <label for="country"><span class="req">*</span> Country:</label>
+        <input style="margin-left: 10px;" type="text" id="country" name="country" required><br><br>
+
+        <label for="zipcode"><span class="req">*</span>Zip Code:</label>
+        <input style="margin-left: 7px;" type="text" id="zipcode" name="zipcode" required><br><br>
+
+        <label for="dob"><span class="req">*</span>Date-of-Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+
+        <input class="submit" type="submit" value="Submit">
+    </form>
+</div>
+
+<script>
+    function validateForm() {
+        var name = document.getElementById("name").value.trim();
+        var username = document.getElementById("username").value.trim();
+        var password = document.getElementById("password").value;
+        var number = document.getElementById("number").value.trim();
+        var email = document.getElementById("email").value.trim();
+        var country = document.getElementById("country").value.trim();
+        var zipcode = document.getElementById("zipcode").value.trim();
+        var dob = document.getElementById("dob").value;
+        var gender = document.querySelector('input[name="gender"]:checked');
+
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        var numberRegex = /^[0-9]+$/;
+        
+
+        if (name === "") {
+            alert("Please enter your name.");
+            return false;
+        }
+    
+
+        if (!email.match(emailRegex)) {
+            alert("Please enter a valid email address.");
+            return false;
+        }
+
+        if (!number.match(numberRegex)) {
+            alert("Please enter a valid number.");
+            return false;
+        }
+
+        if (!zipcode.match(zipcodeRegex)) {
+            alert("Please enter a valid ZIP code.");
+            return false;
+        }
+
+        if (!dob) {
+            alert("Please enter your date of birth.");
+            return false;
+        }
+
+        if (!gender) {
+            alert("Please select your gender.");
+            return false;
+        }
+
+        return true; 
+    }
+</script>
+
+</body>
+</html>
