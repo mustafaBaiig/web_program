@@ -10,7 +10,7 @@
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg Navy">
+    <nav class="navbar navbar-expand-lg Navy" id="12">
        
         <div class="container-fluid text-center"> <!-- Added text-center class -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,89 +18,130 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto"> <!-- Changed justify-content-center to mx-auto -->
+                    <img id="moon1" src="light.png" alt="" width="50px">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#" style="color: rgb(40, 39, 39);font-weight: bold;font-size: x-large;">Home</a>
+                        <a class="nav-link active" href="#Home" style="color: rgb(40, 39, 39);font-weight: bold;font-size: x-large;">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active"href="#" style="color:rgb(40, 39, 39);font-weight: bold;font-size: x-large;">About</a>
+                        <a class="nav-link active"href="#About" style="color:rgb(40, 39, 39);font-weight: bold;font-size: x-large;">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" style="color:rgb(40, 39, 39);font-weight: bold;font-size: x-large;">Project</a>
+                        <a class="nav-link" href="#project" style="color:rgb(40, 39, 39);font-weight: bold;font-size: x-large;">Project</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" style="color:rgb(40, 39, 39); font-weight: bold;font-size: x-large;">Contact</a>
+                        <a class="nav-link" href="#Contact" style="color:rgb(40, 39, 39); font-weight: bold;font-size: x-large;">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
     
+    <section id="Home">
+        <div class="main">
+            <div class="left-div">
+                <p style="font-size: large;font-weight: 700;">Welcome to my Portfolio!</p>
+                <h1>I'm a <span class="span1">Web Developer</span></h1>
+                <p style="color: gray; font-size: large;">Building a successful product is a challenge. I am highly energetic in user experience design, interfaces and web development.</p>
+                <button class="btn custom-btn">View Resume</button>
+            </div>
+            <div class="right-div">
+                <img class="img1" src="img2.avif" alt="Image" width="60%">
+            </div>
+        </div>
+    </section>
+
+
     
-    <div class="main">
-        <div class="left-div">
-            <p style="font-size: large;font-weight: 700;">Welcome to my Portfolio!</p>
-            <h1>I'm a <span class="span1">Web Developer</span></h1>
-            <p style="color: gray; font-size: large;">Building a successful product is a challenge. I am highly energetic in user experience design, interfaces and web development.</p>
-            <button class="btn custom-btn">View Resume</button>
-        </div>
-        <div class="right-div">
-            <img class="img1" src="img2.avif" alt="Image" width="60%">
-        </div>
-    </div>
-
-    <div class="Projects">
-        <h2>Projects I have completed in my University</h2>
-    </div>
      
-    <div class="container" style="margin-top: 4%;">
-        <div class="row">
-          <div class="col-md-4 col-sm-10">
-            <div class="card">
-              <img src="candy.webp" alt="">
-              <p>Developed a prototype of Candy Crush using C++ Language</p>
-                <button class="btn custom-btn">View Details</button>
-
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-10">
-            <div class="card">
-                <img src="ples.jpg" alt="">
-                <p>Developed a prototype of Tic Tac Toe using C++ Language</p>
-                <button class="btn custom-btn">View Details</button>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-10">
-            <div class="card">
-                <img src="dbms.png" alt="">
-                <p>Developed a Data Base Management System using windows form, C sharp and SQL</p>
-                <button class="btn custom-btn">View Details</button>
-            </div>
-          </div>
+    <section id="project">
+        <div class="Projects">
+            <h2>Projects I have completed in my University</h2>
         </div>
+        <div class="container" style="margin-top: 4%;">
+            <div class="row">
+              <div class="col-md-4 col-sm-10">
+                <div class="card">
+                  <img src="candy.webp" alt="">
+                  <p>Developed a prototype of Candy Crush using basic concepts of C++ Language</p>
+                    <button class="btn custom-btn">View Details</button>
+    
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-10">
+                <div class="card">
+                    <img src="ples.jpg" alt="">
+                    <p>Developed a prototype of Tic Tac Toe using C++ Language</p>
+                    <button class="btn custom-btn">View Details</button>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-10">
+                <div class="card">
+                    <img src="dbms.png" alt="">
+                    <p>Developed a Data Base Management System using windows form, C sharp and SQL</p>
+                    <button class="btn custom-btn">View Details</button>
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+
+      <section id="About" style="margin-top: 4%;">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="item">
+                <h3 style="color: black;">Bachelor of Science in Computer Science</h3>
+                <p id="1" style="color: black;">Fast National University, Lahore</p>
+                <p id="1" style="color: black;">Graduated: May 2025</p>
+            </div>
+    
+            <h2 class="section-title">Experience</h2>
+            <div class="item">
+                <h3>Software Developer Intern</h3>
+                <p id="1" style="color: black;">CodeX, Lahore</p>
+                <p id="1" style="color: black;">June 2023 - August 2025</p>
+                <ul>
+                    <li id="1" style="color: black;">Developed web applications using HTML, CSS, JavaScript, and PHP.</li>
+                    <li id="1" style="color: black;">Collaborated with team members to implement new features and fix bugs.</li>
+                </ul>
+            </div>
+        </div>
+      </section>
+   
+<section id="Contact"></section>
+      <div class="form" style="margin-top: 3%;">
+        <form onsubmit="return validateForm()">
+            <label for="name"><span class="req">*</span>Name:</label>
+            <input style="margin-left: 24px;" type="text" id="name" name="name" required><br><br>
+
+            <label for="email"><span class="req">*</span>Email:</label>
+            <input style="margin-left: 28px;" type="email" id="email" name="email" required><br><br>
+            
+            <label for="number"><span class="req">*</span>Message:</label>
+            <input style="margin-left: 13px;" type="text" id="number" name="number" required><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
     </div>
-      
-
-    <div class="container">
-        <h2 class="section-title">Education</h2>
-        <div class="item">
-            <h3>Bachelor of Science in Computer Science</h3>
-            <p>Fast National University, Lahore</p>
-            <p>Graduated: May 2025</p>
-        </div>
-
-        <h2 class="section-title">Experience</h2>
-        <div class="item">
-            <h3>Software Developer Intern</h3>
-            <p>CodeX, Lahore</p>
-            <p>June 2023 - August 2025</p>
-            <ul>
-                <li>Developed web applications using HTML, CSS, JavaScript, and PHP.</li>
-                <li>Collaborated with team members to implement new features and fix bugs.</li>
-            </ul>
-        </div>
-        
-        <!-- Add more sections as needed -->
-
-    </div>
+    
+    <script>
+        let x = document.getElementById('moon1');
+        let y = document.getElementById('12');
+        x.onclick = function(){
+            const body = document.body;
+            if (body.classList.contains('light')) {
+                // Switch to dark mode
+                body.classList.remove('light');
+                body.classList.add('dark');
+                y.style.backgroundColor='white';
+                x.src='moon.png';
+            } else {
+                // Switch to light mode
+                body.classList.remove('dark');
+                body.classList.add('light');
+                x.src='light.png';
+            }
+        }
+    </script>
+    
 </body>
 </html>

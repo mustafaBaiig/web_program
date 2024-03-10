@@ -1,3 +1,6 @@
+*{
+    scroll-behavior: smooth;
+}
 body{
     margin: 0%;
     padding: 0%;
@@ -103,5 +106,59 @@ h2.section-title {
     .container {
         padding: 10px;
     }
+}
+
+.form {
+    
+    max-width: 500px; /* Adjusting max-width for responsiveness */
+    margin: 0 auto; /* Centering the form */
+    padding: 20px;
+    background-color: #ffffff; /* Setting background color for form */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adding box shadow for depth */
+}
+
+.form label {
+    font-weight: bold;
+}
+
+.form input[type="text"],
+.form input[type="email"] {
+    width: calc(100% - 40px); /* Adjusting input width */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+
+.form input[type="text"]:focus,
+.form input[type="email"]:focus {
+    outline: none;
+    border-color: #0f3f67; /* Changing border color on focus */
+}
+
+.form input[type="submit"] {
+    background-color: #0f3f67; /* Setting background color for submit button */
+    color: #ffffff; /* Setting text color for submit button */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form input[type="submit"]:hover {
+    background-color: #1f4f77; /* Darkening the color on hover */
+}
+
+.req {
+    color: red;
+}
+body.light{
+ background-color: white;
+ color: black;
+}
+body.dark{
+   background-color: black;
+   color: white;
 }
 
