@@ -1,3 +1,40 @@
-.Navy{
-    background-color: darkslategrey;
+body{
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
 }
+.nav-link:hover {
+    color: #0f3f67 !important; 
+}
+.left-div {
+    margin-top: 4%;
+    width: 45%;
+    height: 200px;
+    float: left;
+    margin-left: 2%;
+}
+
+.right-div {
+    width: 50%;
+    height: 200px;
+    float: right;
+}
+.span1{
+    color: #0f3f67 ;
+}
+
+.custom-btn {
+    background-color: #0f3f67 !important; /* Change button color */
+    border-color: #0f3f67 !important; /* Change button border color */
+    color: #ffffff !important; /* Change text color */
+}
+.custom-btn:hover {
+    background-color: #0c324f !important; /* Change button color on hover */
+    border-color: #0c324f !important; /* Change button border color on hover */
+}
+.card img:hover{
+    transition: 0.4s;
+   transform: scale(1.03);
+}
+
+
