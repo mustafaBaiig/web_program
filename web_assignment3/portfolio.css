@@ -5,19 +5,51 @@ body{
 }
 .nav-link:hover {
     color: #0f3f67 !important; 
+    transition: 0.4s;
+    transform: scale(1.03);
 }
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
 .left-div {
-    margin-top: 4%;
-    width: 45%;
-    height: 200px;
-    float: left;
-    margin-left: 2%;
+    flex: 1;
+    padding: 20px;
+    
 }
 
 .right-div {
-    width: 50%;
-    height: 200px;
-    float: right;
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.img1 {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.Projects {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-div,
+    .right-div {
+        flex: 1 1 100%;
+    }
 }
 .span1{
     color: #0f3f67 ;
@@ -37,4 +69,39 @@ body{
    transform: scale(1.03);
 }
 
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+/* Section heading styles */
+h2.section-title {
+    color: #333;
+    margin-top: 0;
+}
+
+/* Experience and education item styles */
+.item {
+    margin-bottom: 20px;
+}
+
+.item h3 {
+    margin-top: 0;
+}
+
+.item p {
+    margin-bottom: 5px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+}
 
