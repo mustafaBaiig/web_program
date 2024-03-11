@@ -99,7 +99,7 @@
         function setWeatherIcon(weatherCondition) {
             const weatherIcon = document.querySelector(".weather-icon");
             switch (weatherCondition) {
-                case "Clouds":
+                case "Cloud":
                     weatherIcon.src = "cloudy-day.png";
                     break;
                 case "Clear":
@@ -118,11 +118,9 @@
                 case "Wind":
                     weatherIcon.src = "wind.png";
                     break;
-                case "Clear":
-                    weatherIcon.src = "moon.png";
-                    break;
+               
                 default:
-                    weatherIcon.src = "cloud.png";
+                    weatherIcon.src = "cloudy-day.png";
             }
         }
 
