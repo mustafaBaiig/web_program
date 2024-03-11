@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    background: #222;
+}
+
+.card {
+    width: 90%;
+    max-width: 350px; /* Adjusted max-width for smaller size */
+    background: linear-gradient(135deg, #454682, #5b548a);
+    color: #fff;
+    margin: 50px auto; /* Reduced margin for better positioning */
+    border-radius: 20px;
+    padding: 30px 20px; /* Adjusted padding for smaller size */
+    text-align: center;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Added margin to separate from content */
+}
+
+.search input {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 15px; /* Adjusted padding for smaller size */
+    height: 40px; /* Reduced height for smaller size */
+    border-radius: 20px; /* Adjusted border-radius for smaller size */
+    flex: 1;
+    margin-right: 10px; /* Reduced margin for smaller size */
+    font-size: 16px; /* Reduced font-size for smaller size */
+}
+
+.search button {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 60px; /* Reduced width for smaller size */
+    height: 60px; /* Reduced height for smaller size */
+    cursor: pointer;
+}
+
+.search button img {
+    width: 24px; /* Reduced width for smaller size */
+}
+
+.weather-icon {
+    width: 120px; /* Reduced width for smaller size */
+    margin-top: 20px; /* Reduced margin-top for smaller size */
+}
+
+.weather h1 {
+    font-size: 48px; /* Reduced font-size for smaller size */
+    font-weight: 500;
+}
+
+.weather h2 {
+    font-size: 24px; /* Reduced font-size for smaller size */
+    font-weight: 400;
+    margin-top: -5px; /* Adjusted margin-top for smaller size */
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px; /* Adjusted padding for smaller size */
+    margin-top: 30px; /* Reduced margin-top for smaller size */
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img {
+    width: 30px; /* Reduced width for smaller size */
+    margin-right: 8px; /* Reduced margin-right for smaller size */
+}
+
+.humidity,
+.wind {
+    font-size: 20px; /* Reduced font-size for smaller size */
+    margin-top: -4px; /* Adjusted margin-top for smaller size */
+}
+
+.weather {
+    display: none;
+}
+
+.error {
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+}
+
+
+ @media screen and (max-width: 768px) {
+            .card {
+                max-width: 90%;
+                margin: 0 auto;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .search {
+                text-align: center;
+            }
+            .search input {
+                width: 70%;
+            }
+            .search button {
+                margin-left: 10px;
+            }
+            .details {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .col {
+                margin-bottom: 20px;
+                text-align: center;
+            }
+        }
+
+        footer {
+            background-color:  #5b548a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media screen and (max-width: 768px) {
+            footer {
+                font-size: 14px;
+            }
+        }
