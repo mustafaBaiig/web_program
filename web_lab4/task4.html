@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Find Class and ID of Clicked Element</title>
+<script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+</head>
+<body>
+
+<div id="container">
+    <button id="button1" class="btn">Button 1</button>
+    <button id="button2" class="btn">Button 2</button>
+    <button id="button3" class="btn">Button 3</button>
+</div>
+
+<script>
+$(document).ready(function(){
+    $('.btn').click(function(){
+      
+        var clickedClass = $(this).attr('class');
+        var clickedId = $(this).attr('id');
+        
+        console.log("Class of clicked element: " + clickedClass);
+        console.log("ID of clicked element: " + clickedId);
+    });
+});
+</script>
+
+</body>
+</html>
