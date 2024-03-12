@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Count child elements using jQuery.</title>
+</head>
+<body>
+<div id="selected">
+<p>Red</p>
+<p>White</p>
+<p>Green</p>
+<p>Black</p>
+<p>Blue</p>
+<p>Orange</p>
+</div>
+
+<script>
+$(document).ready(function(){
+    var numberOfPs = $('#selected').find('p').length;
+    console.log("Number of 'p' elements: " + numberOfPs);
+});
+</script>
+
+</body>
+</html>
