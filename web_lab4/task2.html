@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toggle Image</title>
+<script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+
+</head>
+<body>
+<img id="image" src="wind.png" alt="Placeholder Image" width="30px">
+<button id="toggleButton">Hide Image</button>
+
+<script>
+    $(document).ready(function(){
+    
+        $('#image').hide();
+        $('#toggleButton').click(function(){
+            $('#image').toggle();
+            var buttonText = $(this).text();
+            $(this).text(buttonText == 'Hide Image' ? 'Show Image' : 'Hide Image');
+        });
+    });
+    </script>
+</body>
+</html>
